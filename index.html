@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Chukwuebuka Omenife's Biography</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="orange" />
+
+    <!-- External Files loaded from the other tabs -->
+    <link rel="manifest" href="manifest.json" />
+
+    <script src="script.js"></script>
+    <script src="aframe.js"></script>
+
+    <!-- Add Bootstrap CSS and JS links -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Add custom CSS for image size -->
+    <style>
+      .carousel-inner img {
+        max-width: 200px;
+        max-height: 300px;
+      }
+
+      body {
+        background: linear-gradient(to bottom,rgb(37, 150, 190) , grey);
+      }
+
+      ul,
+      li,
+      a {
+        list-style: none;
+      }
+      .img,
+      .cont {
+        background-color: black;
+        
+        padding: 10px;
+        margin: 10px;
+        border-radius: 2px solid blue;
+        text-decoration: none; /* Remove underlines from text */
+        display: inline-block; /* Make elements inline-block to look like buttons */
+        color: #fff; /* Set text color to white */
+        cursor: pointer; /* Change cursor on hover to indicate interactivity */
+      }
+    
+      .name {
+        text-shadow: 2px 2px 4px rgba(0, 0, 255, 0.6);
+        font-style: italic;
+        font-weight: bold;
+      }
+      #contact,a{
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text-center">
+      <h1 class="name">Chukwuebuka Omenife</h1>
+      <a href="#imagegallery " class="img">Image-Gallery</a>
+      <a href="#contact" class="cont">Contact-Me</a>
+
+      <h2>About Me</h2>
+      <p>
+        <strong>Name:</strong> Chukwuebuka Omenife<br />
+        <strong>Occupation:</strong> Freelance Software Developer<br />
+        <strong>Religion:</strong> Christian<br />
+        <strong>Age:</strong> Ask me my age<br />
+        <strong>Nationality:</strong> Nigerian<br />
+        <strong>Marital Status:</strong> Single <br />
+        <strong>Hobbies:</strong>Travelling, Reading,Coding
+      </p>
+      <h2>Travel Log</h2>
+      <ul>
+        <li>Turks & Caicos</li>
+        <li>UAE</li>
+        <li>Oman</li>
+        <li>Ethiopia</li>
+        <li>China</li>
+        <li>Qatar</li>
+      </ul>
+
+      <div id="imagegallery">
+        <h2>Image Gallery</h2>
+        <!-- Add Bootstrap Carousel -->
+        <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Dubaimall.jpg" class="d-block w-100" alt="Photo" />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="animation.gif"
+                class="d-block w-100"
+                alt="Animation"
+                onclick="speak()"
+              />
+            </div>
+            <!-- Add five more images here -->
+            <div class="carousel-item">
+              <img src="cheche-photo.jpg" class="d-block w-100" alt="Image 1" />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="cheche-photo2.jpg"
+                class="d-block w-100"
+                alt="Image 2"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="cheche-photo3.jpg"
+                class="d-block w-100"
+                alt="Image 3"
+              />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#imageCarousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#imageCarousel"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" ariahidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+        <h2>360 VR Panorama</h2>
+        <a-scene embedded style="width: 100%; height: 300px">
+          <a-sky src="pano.jpg"></a-sky>
+        </a-scene>
+      </div>
+      <div id="contact">
+        <h2>Contact and Portfolio</h2>
+        <a href="#">@firt</a>
+        <a href="tel:+2347048706774">Call me</a>
+        <a href="whatsapp://send?phone=2347048706774&text=Check%20out%20my%20biography">Message me on WhatsApp</a>
+
+          </a
+        >
+        <a href="https://www.yourportfoliowebsite.com">My Portfolio Website</a>
+      </div>
+    </div>
+  </body>
+</html>
